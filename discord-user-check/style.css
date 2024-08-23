@@ -1,0 +1,129 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header p {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.discord-button {
+    padding: 8px 15px;
+    background-color: #7289da;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #5b6eae;
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px; 
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #2b2b2b;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+    animation: slideDown 0.5s ease;
+}
+
+#userDetails {
+    margin-top: 20px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Guide Section */
+.guide-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 1s ease;
+    text-align: left;
+}
+
+.guide-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.guide-container p, .guide-container ol {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.guide-container ol {
+    margin-left: 20px;
+    list-style-type: decimal;
+}
+
+.guide-container li {
+    margin-bottom: 10px;
+}

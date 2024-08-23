@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord User Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="header">
+        <p>Made by Adelaidee</p>
+        <a href="https://discord.gg/VVm6VGcKYK" target="_blank" class="discord-button">Join Discord Server</a>
+    </div>
+    <div class="container">
+        <h1>Discord User Checker</h1>
+        <form id="userForm">
+            <input type="text" id="userId" placeholder="Enter Discord User ID" required>
+            <button type="submit">Get User Details</button>
+        </form>
+        <div id="userDetails"></div>
+        <p id="error" class="error"></p>
+    </div>
+
+    <div class="guide-container">
+        <h2>How do I find a Discord User ID?</h2>
+        <p>To find a Discord User ID, follow these steps:</p>
+        <ol>
+            <li>Open Discord and go to <strong>Settings</strong>.</li>
+            <li>Navigate to <strong>Advanced</strong> and toggle on <strong>Developer Mode</strong>.</li>
+            <li>Exit settings, go to any server, and type a message in a channel.</li>
+            <li>Right-click on your username or any user's name in the chat, and select <strong>Copy ID</strong>.</li>
+        </ol>
+        <p>You now have the Discord User ID copied to your clipboard!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
